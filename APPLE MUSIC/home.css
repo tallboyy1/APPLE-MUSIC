@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(40, 40, 40);
+}
+
+h1{
+    font-size: 1.2em;
+}
+
+.topRight h1{
+    margin: 5px 0;
+}
+
+h3{
+    font-size: 0.9em;
+}
+
+p{
+    font-size: 0.9em;
+}
+
+.fade{
+    opacity: 50%;
+}
+
+.right h1{
+    background-color: rgb(28, 28, 28);;
+}
+
+
+/* Arrangement */
+
+.sideBar{
+    position: fixed;
+    border-right: 0.5px solid black;
+    float: left;
+    width: 15%;
+    padding: 2em 0 2em 1.5625em;
+    height: 100vh;
+    background-color: rgb(40, 40, 40);
+    color: white;
+}
+
+.mainPage{
+    float: right;
+    width: 85%;
+}
+
+.mainPageContainer .left{
+    float: left;
+    width: 80%;
+}
+
+.mainPageContainer .right{
+    float: right;
+    width: 20%;
+}
+
+
+
+
+/* Side Bar */
+
+
+.controls{
+    margin-bottom: 1.25em;
+    display: flex;
+    background-color: rgb(40, 40, 40);
+}
+
+.close, .minimize, .expand{
+    margin-right: 0.5em;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.close{
+    background-color: rgb(233, 84, 84);
+}
+.minimize{
+    background-color: rgb(218, 209, 37);
+}
+.expand{
+    background-color: rgb(65, 143, 65);
+}
+
+.search{
+    margin-bottom: 1em;
+    margin-right: 1.5625em;
+}
+.search input{
+    width: 100%;
+    padding: 0.625em 0 0.625em 0.625em;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.596);
+}
+
+.appleMusic, .library, .playlists{
+    margin-bottom: 1.5625em;
+}
+
+.appleMusic p, .library p, .playlists p{
+    margin-top: 0.5em;
+}
+
+.sideBar i, .colorRed{
+    color: rgb(240, 62, 62);
+}
+
+
+
+
+/* Navbar */
+
+nav{
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 85%;
+    background-color: rgb(28, 28, 28);
+    border-bottom: 0.5px solid black;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+}
+
+.navFirst{
+    margin-left: 6.25em;
+}
+.navFirst i{
+    margin-right: 0.9375em;
+    color: rgb(230, 230, 230);
+}
+/* .fa-play{
+    font-size: 1.5em;
+} */
+
+.navSecond{
+    display: flex;
+    color: white;
+}
+.navSecond img{
+    border-radius: 3px 0 0 3px;
+    width: 50px;
+    height: 50px;
+}
+.navSecond .title{
+    border-radius: 0 3px 3px 0;
+    text-align: center;
+    width: 400px;
+    background-color: grey;
+}
+
+.navSecond .title h4{
+    margin-top: 5px;
+}
+
+
+.navThird{
+    place-items: center;
+}
+
+.navThird input{
+    border: 1px solid black;
+}
+
+.navThird i{
+    margin: 0 0.625em;
+    color: rgb(230, 230, 230);
+}
+
+.navFourth i{
+    margin-right: 0.9375em;
+    color: rgb(230, 230, 230);
+}
+
+
+.appleMusicDetails, .libraryDetails, .playlistsDetails{
+    margin-left: 0.9375em;
+}
+
+
+
+
+/* Main Page */
+
+.mainPageContainer{
+    padding-top: 60px;
+}
+
+.left{
+    color: white;
+    margin-top: 3.125em;
+    padding: 0 4%;
+    background-color: rgb(40, 40, 40);
+}
+
+
+.top{
+    display: flex;
+}
+
+.topLeft{
+    flex-basis: 30%;
+}
+.topLeft img{
+    width: 100%;
+    height: auto;
+    margin-right: 1.5em;
+    border-radius: 2%;
+}
+
+
+
+.topRight{
+    flex-basis: 70%;
+    padding-left: 2.5em;
+    padding-top: 5rem;
+}
+
+.topLeftContainer{
+    margin-top: 5.1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.playButton, .shuffleButton{
+    padding: 0.625em 0;
+    width: 100px;
+    background-color: rgb(240, 62, 62);
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+.tLCRight{
+    display: flex;
+}
+
+.add{
+    padding: 0.625em;
+    width: 50px;
+    background-color: rgb(70, 64, 64);
+    color: rgb(240, 62, 62);
+    border-radius: 20px;
+    border: none;
+}
+
+.menuDiv{
+    margin-left: 0.625em;
+    padding-left: 8px;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    place-items: center;
+    background-color: rgb(70, 64, 64);
+    border-radius: 100%;
+}
+
+.first, .second, .third{
+    margin-right: 5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+.first{
+    background-color: rgb(240, 62, 62);
+}
+.second{
+    background-color: rgb(240, 62, 62);
+}
+.third{
+    background-color: rgb(240, 62, 62);
+}
+
+
+
+.bottom{
+    margin-top: 2.5em;
+}
+
+.song{
+    margin-bottom: 1.5625em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.yes{
+    padding: 1.2em 1.2em;
+    background-color: rgb(49, 40, 40);
+    color: white;
+    border-radius: 5px;
+}
+
+.no{
+    padding: 0 1.2em;
+}
+
+.songRight{
+    display: flex;
+}
+
+.songMenu{
+    margin-left: 0.625em;
+    padding-left: 8px;
+    display: flex;
+    place-items: center;
+    border-radius: 100%;
+}
+
+.first, .second, .third{
+    margin-right: 5px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+}
+
+.first{
+    background-color: rgb(240, 62, 62);
+}
+.second{
+    background-color: rgb(240, 62, 62);
+}
+.third{
+    background-color: rgb(240, 62, 62);
+}
+
+
+.belowBottom{
+    margin-top: 2.5em;
+}
+
+
+
+.right{
+    float: right;
+    /* position: fixed; */
+    background-color: rgb(28, 28, 28);
+    color: rgb(217, 217, 217);
+    border-left: 0.5px solid black;
+    padding: 2% 2%;
+}
+
+.right h1{
+    margin-bottom: 0.9375em;
+}
